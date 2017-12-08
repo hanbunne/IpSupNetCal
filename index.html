@@ -1,0 +1,49 @@
+<html>
+
+<head>
+  <script src="./computing.js"></script><center>
+  <h1>โปรแกรมคำนวนซับเน็ตของอินเตอร์เน็ตโปรโตคอล</h1></center>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {background-color: #FFCCCC;}
+    h1   {color: #660000;}
+    h1     {font-size: 80px}
+    p     {font-size: 20px}
+  </style>
+</head>
+
+<body><center>
+
+
+    <hr>
+      <form id="form_network_class" action="javascript:changeSubnet();">
+          Network Class
+          <input name="network_class" type="radio" value="any" onclick="this.form.submit();" checked> Any
+          <input name="network_class" type="radio" value="A" onclick="this.form.submit();" style="margin-left"> A
+          <input name="network_class" type="radio" value="B" onclick="this.form.submit();" style="margin-left"> B
+          <input name="network_class" type="radio" value="C" onclick="this.form.submit();" style="margin-left"> C
+      </form>
+      <form id="form_calculate" action="javascript:get_result();">
+          Subnet
+          <select class="decorated"name="subnet" id="subnet" >
+            <script> javascript:createChoice(1); </script>
+          </select>
+
+          <br>
+          IP Address
+          <input id="IP_Address" type="text"  pattern="(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)">
+          <button type="submit"> CONFIRM </button>
+      </form>
+    </table>
+  </div>
+
+  <div class="row" id="result">
+    <div id="div-table-2" >
+    </div>
+
+    <div id="div-table-3" >
+    </div>
+</center>
+</body>
+
+</html>
